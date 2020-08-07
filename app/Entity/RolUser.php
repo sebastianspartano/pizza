@@ -4,11 +4,10 @@ namespace App\Entity;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cliente extends Model
+class RolUser extends Model
 {
-    protected $table = 'Clientes';
+    protected $table = 'role_user';
     protected $primaryKey = 'id';
-    protected $fillable = ["nit","persona_id"];
-
+    protected $fillable = ['role_id','user_id'];
     //
 }
